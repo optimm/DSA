@@ -1,0 +1,1 @@
+{"name":"Local: gcd-queries","url":"/home/ayush/Desktop/study-dsa/gcd-queries.cpp","tests":[{"id":1637562733198,"input":"1\n3 3\n2 6 9\n1 1\n2 2\n2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ayush/Desktop/study-dsa/gcd-queries.cpp","group":"local","local":true}

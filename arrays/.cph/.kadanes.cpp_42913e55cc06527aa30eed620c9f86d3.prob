@@ -1,0 +1,1 @@
+{"name":"Local: kadanes","url":"/home/ayush/Desktop/study-dsa/arrays/kadanes.cpp","tests":[{"id":1641521495281,"input":"4\n1 -2 -3 -4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ayush/Desktop/study-dsa/arrays/kadanes.cpp","group":"local","local":true}

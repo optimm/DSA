@@ -1,0 +1,1 @@
+{"name":"Local: c","url":"/home/ayush/Desktop/study-dsa/c.cpp","tests":[{"id":1637412536244,"input":"4 2\n127 235 78\n192 134 298\n28 56 42\n96 120 250","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ayush/Desktop/study-dsa/c.cpp","group":"local","local":true}
