@@ -1,0 +1,1 @@
+{"name":"Local: count_inversion","url":"/home/ayush/Desktop/study-dsa/arrays/count_inversion.cpp","tests":[{"id":1644171982315,"input":"5\n2 4 1 3 5","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ayush/Desktop/study-dsa/arrays/count_inversion.cpp","group":"local","local":true}
