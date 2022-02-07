@@ -78,7 +78,7 @@ int findDuplicate(vector<int> &nums)
     return duplicate;
 }
 /// print all duplicate another method
-// trat array as hash map
+// treat array as hash map
 vector<int> dupli(vector<int> v)
 {
     vector<int> s;
