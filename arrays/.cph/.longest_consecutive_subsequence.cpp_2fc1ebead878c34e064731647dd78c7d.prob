@@ -1,0 +1,1 @@
+{"name":"Local: longest_consecutive_subsequence","url":"/home/ayush/Desktop/study-dsa/arrays/longest_consecutive_subsequence.cpp","tests":[{"id":1644264850174,"input":"7\n2 6 1 9 5 4 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ayush/Desktop/study-dsa/arrays/longest_consecutive_subsequence.cpp","group":"local","local":true}
