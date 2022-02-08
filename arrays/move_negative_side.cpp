@@ -100,7 +100,7 @@ int main()
     int j = 0;
     for (int i = 0; i < n; i++)
     {
-        if (a[i] >= 0)
+        if (a[i] < 0)
         {
             if (i != j)
                 swap(a[i], a[j]);
@@ -122,9 +122,9 @@ int main()
     //     // debug(y)
     //     // debug(a)
     // }
-debug(j)
-    for (auto it : a)
-        cout << it << " ";
+    debug(j) for (auto it : a)
+            cout
+        << it << " ";
 
     return 0;
 }
