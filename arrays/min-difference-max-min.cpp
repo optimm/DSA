@@ -106,6 +106,7 @@ int getMinDiff(int arr[], int n, int k)
     }
     return ans;
 }
+// approach 2
 int get(int arr[], int n, int k)
 {
 
