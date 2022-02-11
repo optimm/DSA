@@ -89,28 +89,31 @@ string countAndSay(int n)
     string say = "1";
     for (int i = 1; i < n; i++)
     {
-        int count = 1;
-        char number = say[0];
         string temp_say = "";
-        for (int j = 1; j < say.size(); j++)
+        int count = 1;
+        char x = say[0];
+        debug(say) for (int j = 1; j < say.size(); j++)
         {
-            if (say[j] != number)
+            if (x != say[j])
             {
-                temp_say.push_back(count + '0');
-                temp_say.push_back(number);
+                debug(x)
+                    debug(count)
+                        temp_say += to_string(count);
+                temp_say.push_back(x);
+                x = say[j];
                 count = 1;
-                number = say[j];
             }
             else
             {
                 count++;
             }
         }
-        debug(temp_say)
-        debug(count)
+
         say = temp_say;
         say.push_back(count + '0');
-        say.push_back(number);
+        say.push_back(x);
+
+        debug(say)
     }
     return say;
 }
@@ -120,7 +123,6 @@ int main()
     // cout << "hello\n";
     cin >> n;
     cout << countAndSay(n);
-
 
     return 0;
 }

@@ -1,0 +1,1 @@
+{"name":"Local: count_palindromic_substring","url":"/home/ayush/Desktop/study-dsa/string/count_palindromic_substring.cpp","tests":[{"id":1644563173713,"input":"abba","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ayush/Desktop/study-dsa/string/count_palindromic_substring.cpp","group":"local","local":true}
