@@ -1,0 +1,1 @@
+{"name":"Local: issubsequence","url":"/home/ayush/Desktop/study-dsa/string/issubsequence.cpp","tests":[{"id":1644698930457,"input":"abc\nahbgdc","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ayush/Desktop/study-dsa/string/issubsequence.cpp","group":"local","local":true}
