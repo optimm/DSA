@@ -1,0 +1,1 @@
+{"name":"Local: longest_palindromic_subsequence","url":"/home/ayush/Desktop/study-dsa/string/longest_palindromic_subsequence.cpp","tests":[{"id":1644590503358,"input":"abcdef\nabxef","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ayush/Desktop/study-dsa/string/longest_palindromic_subsequence.cpp","group":"local","local":true}
