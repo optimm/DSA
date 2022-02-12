@@ -1,0 +1,1 @@
+{"name":"Local: longest-common-substring","url":"/home/ayush/Desktop/study-dsa/string/longest-common-substring.cpp","tests":[{"id":1644683022712,"input":"adac\nadadac","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"/home/ayush/Desktop/study-dsa/string/longest-common-substring.cpp","group":"local","local":true}
