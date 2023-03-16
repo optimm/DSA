@@ -14,6 +14,7 @@ void dfs(vector<int> adj[], int vertex, vector<bool> &visited)
         dfs(adj, child, visited);
     }
 }
+
 int main()
 {
     int n;
