@@ -22,34 +22,76 @@ void print(vector<ll> &v)
     cout << "\n";
 }
 
-void flatten(Node *root, Node *last)
+void flatten(Node *root)
 {
 
-    if (root == NULL)
+    if (root == NULL || (root->left == NULL && root->right == NULL))
     {
-        return;
-    }
-    if (root->left == NULL && root->right == NULL)
-    {
-        cerr << root->data << endl;
-        last = root;
         return;
     }
 
     Node *lefti = root->left;
     Node *righti = root->right;
     root->left = NULL;
-    Node *lasti = NULL;
-    flatten(lefti, lasti);
-    if (lasti != NULL)
-        cerr << lasti->data << endl;
-    flatten(righti, lasti);
-    root->right = lefti;
-    while (lefti->right != NULL)
+    flatten(lefti);
+    flatten(righti);
+    root->right = lefti == NULL ? righti : lefti;
+    while (lefti != NULL && lefti->right != NULL)
     {
         lefti = lefti->right;
     }
-    lefti->right = righti;
+    if (lefti != NULL)
+    {
+        lefti->right = righti;
+    }
+}
+
+Node *flatten2(Node *root)
+{
+    if (root == NULL)
+        return root;
+    stack<Node *> st;
+    st.push(root);
+    Node *prev = root;
+    while (!st.empty())
+    {
+        Node *curr = st.top();
+        st.pop();
+        if (curr->right)
+            st.push(curr->right);
+        if (curr->left)
+            st.push(curr->left);
+        if (curr != prev)
+        {
+            prev->right = curr;
+            prev->left = NULL;
+            prev = curr;
+        }
+    }
+    return root;
+}
+
+Node *morrisFlatten(Node *root)
+{
+    if (root == NULL)
+        return root;
+
+    Node *curr = root;
+    while (curr != NULL)
+    {
+        if (curr->left != NULL)
+        {
+            Node *last = curr->left;
+            while (last->right != NULL)
+                last = last->right;
+
+            last->right = curr->right;
+            curr->right = curr->left;
+            curr->left = NULL;
+        }
+        curr = curr->right;
+    }
+    return root;
 }
 
 int main()
@@ -70,11 +112,11 @@ int main()
     r->left = target1;
     r->right = target2;
 
-    flatten(root, NULL);
+    Node *ans = morrisFlatten(root);
 
-    while (root != NULL)
+    while (ans != NULL)
     {
-        cout << root->data << " ";
-        root = root->right;
+        cout << ans->data << " ";
+        ans = ans->right;
     }
 }
